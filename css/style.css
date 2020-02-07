@@ -67,10 +67,11 @@ html,body {
 	color: var(--gray);
 	margin: 0;
 	padding: 0;
+	padding-bottom: 7rem;
 	font-family: A1ゴシック B;
 	font-weight: bold;
-	line-height: 20px;
-	font-size: 0.875em;
+	line-height: 2rem;
+	font-size: 1rem;
 }
 
 .button {
