@@ -1,0 +1,149 @@
+/* CSS Document */
+:root{
+	--main-color: #EA2027;
+	--gray: #636A72;
+	--light: #fff;
+	--column-padding: 10px 10px;
+	--screen-color: #8EC3DEa9;
+	--dark : #232733;
+	--dark2 : #2B3344;
+	--transparent : rgb(0,0,0, 0.9);
+}
+
+ul {
+    list-style-type: none;
+}
+
+html,body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+		font-size: 16px;
+}
+
+
+.vertical-center {
+	min-height: 100%;
+	min-height: 100vh;
+	display: -webkit-box;
+	display: flex;
+	        -webkit-box-align: center;
+	                align-items: center;
+}
+
+.lower{
+	background-color: var(--light);
+	height: 50%;
+}
+
+.inner-container {
+	margin: auto;
+	padding: 0;
+}
+
+.main {
+	height: 100%;
+    width: 100%;
+	background-color: var(--main-color);
+	background-image: url("../images/SVG/indonesia-map.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 0 33%;
+	z-index: 0;
+
+}
+
+.upper {
+	height: 50%;
+}
+
+.site-logo {
+	height: 72px;
+	        -webkit-filter: drop-shadow(0px 0px 6px var(--gray));
+	                filter: drop-shadow(0px 0px 6px var(--gray));
+}
+
+.hero1 {
+	color: var(--gray);
+	margin: 0;
+	padding: 0;
+	font-family: A1ゴシック B;
+	font-weight: bold;
+	line-height: 20px;
+	font-size: 0.875em;
+}
+
+.button {
+	    flex-wrap: wrap;
+    cursor : pointer;
+}
+
+.scan-button {
+	margin: 15px 0;
+	        -webkit-filter: drop-shadow(0px 0px 4px var(--gray));
+	                filter: drop-shadow(0px 0px 4px var(--gray));
+}
+
+
+.logo-container {
+	top: 20%;
+	left: 50%;
+	margin: 0 0 0 -125px;
+}
+
+.button-font {
+	color: var(--gray);
+	font-size: 0.75em;
+	font-family: A1ゴシック B;
+	font-weight: bold;
+	letter-spacing: 0.05em;
+
+}
+
+.icons {
+	margin-bottom: 10px;
+	height: 32px;
+}
+
+.container-fluid {
+	max-width: 962px;
+}
+
+
+.delay-1 {
+  -webkit-animation-delay: 300ms;
+  animation-delay: 300ms;
+}
+
+.delay-2 {
+  -webkit-animation-delay: 600ms;
+  animation-delay: 600ms;
+}
+
+.delay-3 {
+  -webkit-animation-delay: 1200ms;
+  animation-delay: 1200ms;
+}
+
+.delay-4 {
+  -webkit-animation-delay: 1500ms;
+  animation-delay: 1500ms;
+}
+
+.delay-5 {
+  -webkit-animation-delay: 1800ms;
+  animation-delay: 1800ms;
+}
+
+
+@media (max-width: 320px) {
+	.hero1{
+		font-size: 0.75em;
+	}
+}
+
+@media screen and (orientation: landscape) and (max-width: 896px) {
+	.hide-on-landscape{
+		display: none;
+	}
+}

@@ -1,0 +1,431 @@
+@charset "utf-8";
+
+/* CSS Document */
+:root {
+  --main-color: #EA2027;
+  --main-transparent: #FFD8D9;
+  --transparent: rgba(0, 0, 0, .8);
+  --light: #fff;
+  --column-padding: 10px 10px;
+  --screen-color: #8EC3DECC;
+  --yellow: #FFC312;
+  --orange: #F79F1F;
+  --blue: #0652DD;
+  --dark: #232733;
+  --dark2: #2B3344;
+  --gray: #636A72;
+  --gray-gradient: linear-gradient(180deg, rgba(108, 117, 125, 1) 0%, rgba(83, 91, 102, 1) 100%);
+}
+
+#wrap {
+  height: 100%;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.bg-1 {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/Background/Tengah/pelabuhan.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 75% 0;
+  background-color: var(--screen-color);
+  background-blend-mode: screen;
+  font-size: 16px;
+}
+
+.bg-2 {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/Background/Tengah/pelabuhan.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 75% 0;
+  font-size: 16px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  height: 100%;
+}
+
+#header {
+  height: 50px;
+  background: var(--gray);
+  background: var(--gray-gradient);
+  overflow: hidden;
+}
+
+#city-name {
+  color: var(--light);
+  font-family: 新ゴ B;
+  line-height: 20px;
+  font-size: 0.75em;
+  position: relative;
+}
+
+#city-name::after {
+  display: block;
+  position: absolute;
+  content: "Jakarta";
+  font-family: adobe-handwriting-ernie, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.06em;
+  color: #878c90;
+  letter-spacing: -1.05px;
+  top: 15px;
+  left: calc(50% - 44px);
+  z-index: -1;
+}
+
+.center-contents {
+  margin: 0;
+  padding: 0;
+  height: calc(100% - 114px);
+  width: 100%;
+  position: relative;
+}
+
+.zoom-button {
+  bottom: 0;
+  left: 0;
+  max-height: 28px;
+}
+
+.zoom-icon {
+  bottom: 0;
+  left: 0;
+  height: 32px;
+  cursor: pointer;
+}
+
+.zoom-col {
+  display: -webkit-box;
+  display: flex;
+}
+
+.hero-img {
+  background-image: url("../images/Character/Tengah/fatahillah-phone-cropped.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.description {
+  position: relative;
+}
+
+.page-font-color {
+  color: var(--light);
+}
+
+.handwriting-name {
+  display: inline;
+  color: var(--main-transparent);
+  font-family: adobe-handwriting-ernie, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2em;
+  text-shadow: 0 0 3px var(--main-color);
+  letter-spacing: -1.05px;
+}
+
+.text-block {
+  position: relative;
+  top: -10px;
+  left: 0;
+  padding: 10px;
+  background-color: var(--transparent);
+  box-shadow: 0 0 5px 1px;
+  z-index: 10;
+}
+
+.hero-name {
+  font-size: 1em;
+  font-weight: 800;
+  font-family: A1ゴシック B;
+  letter-spacing: -0.56px;
+  line-height: 21px;
+  margin-bottom: 12px;
+}
+
+.types {
+  margin-bottom: 12px;
+}
+
+.type-list {
+  font-size: 0.75em;
+  letter-spacing: 0px;
+  line-height: 12px;
+  font-family: 新ゴ L;
+}
+
+.type-list strong {
+  font-family: 新ゴ M;
+}
+
+.weapon-type-container {
+  background-color: var(--gray);
+  border-radius: 9px;
+  height: 16px;
+}
+
+.type-container {
+  border-radius: 9px;
+  height: 16px;
+}
+
+.icon {
+  max-width: 16px;
+  max-height: 16px;
+}
+
+.type-symbol {
+  font-size: 0.625em;
+  font-family: 新ゴ M;
+  font-weight: 800;
+}
+
+.description-text {
+  font-size: 0.625em;
+  letter-spacing: 0;
+  line-height: 20px;
+  font-family: 新ゴ L;
+}
+
+#subtext {
+  font-family: 新ゴ B;
+  font-size: 0.75em;
+  font-weight: 800;
+  color: var(--dark2);
+}
+
+#heroes-select-container {
+  bottom: 0;
+  left: 0;
+  background: rgb(255, 255, 255);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 1)), color-stop(83%, rgba(255, 255, 255, 1)), color-stop(90%, rgba(255, 255, 255, 0.8631827731092436)), color-stop(93%, rgba(255, 255, 255, 0.6951155462184874)), color-stop(96%, rgba(255, 255, 255, 0.2805497198879552)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 83%, rgba(255, 255, 255, 0.8631827731092436) 90%, rgba(255, 255, 255, 0.6951155462184874) 93%, rgba(255, 255, 255, 0.2805497198879552) 96%, rgba(255, 255, 255, 0) 100%);
+}
+
+#hero-info {
+  height: 100%;
+}
+
+#local-info {
+  height: 100%;
+}
+
+.orientation-description {
+  color: #a1a1a1;
+  margin-top: 10px;
+  font-size: 0.625em
+}
+
+.heroes-box {
+  max-height: 100px;
+  width: auto;
+  overflow: hidden;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: 50% 30%;
+  object-position: 50% 30%;
+  border-radius: 5px;
+}
+
+.region-backtext {
+  position: relative;
+  z-index: 2;
+}
+
+.region-backtext::after {
+  display: block;
+  content: "Central Indonesia";
+  position: absolute;
+  font-family: adobe-handwriting-ernie, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2em;
+  color: #D7DAD9;
+  letter-spacing: -1.05px;
+  bottom: 10px;
+  z-index: -1;
+}
+
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 64px;
+  width: 100%;
+  background: var(--gray);
+  background: var(--gray-gradient);
+  z-index: 10;
+}
+
+.button-font {
+  color: var(--light);
+  font-size: 0.625em;
+  font-family: A1ゴシック B;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  width: 64px;
+}
+
+.icons {
+  height: 32px;
+  margin-bottom: 5px;
+  cursor: pointer
+}
+
+.icons-large {
+  height: 64px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+#scan-button {
+  bottom: 10px;
+  position: absolute;
+}
+
+#scan-button-img {
+  position: fixed;
+  bottom: 32px;
+  left: calc(50% - 32px);
+}
+
+.delay-1 {
+  -webkit-animation-delay: 300ms;
+  animation-delay: 300ms;
+}
+
+.delay-2 {
+  -webkit-animation-delay: 600ms;
+  animation-delay: 600ms;
+}
+
+.delay-3 {
+  -webkit-animation-delay: 1200ms;
+  animation-delay: 1200ms;
+}
+
+.delay-4 {
+  -webkit-animation-delay: 1500ms;
+  animation-delay: 1500ms;
+}
+
+.delay-5 {
+  -webkit-animation-delay: 1800ms;
+  animation-delay: 1800ms;
+}
+
+/*Media Queries*/
+/*small phones*/
+@media (max-width:320px) {
+  #header {
+    position: fixed;
+    margin-top: -50px;
+    z-index: 1000;
+  }
+
+  .hero-img {
+    background-position: 30%;
+  }
+
+  .center-contents {
+    height: auto;
+    margin-top: 50px;
+  }
+
+  .handwriting-name {
+    font-size: 1.5em;
+  }
+
+  .type-list {
+    font-size: 0.625em;
+    letter-spacing: -0.48px;
+  }
+
+  #heroes-select-container .row:nth-child(2) {
+    margin-bottom: 64px;
+  }
+}
+
+/*standard Mobile phones*/
+@media (min-width: 321px) and (max-width:767px) {
+  .description {
+    margin-top: 10%;
+  }
+
+  .px-1 {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+}
+
+/*tablet & desktop*/
+@media (min-width: 768px) {
+  .description {
+    margin-top: 10%;
+  }
+
+  .hero-img {
+    background-image: url("../images/Character/Tengah/fatahillah-tablet.png");
+    background-size: contain;
+    background-position: 10%;
+  }
+
+  .hero-name {
+    font-size: 1.5em;
+    line-height: 27px;
+    margin-bottom: 20px;
+    letter-spacing: 0;
+  }
+
+  .type-list {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+
+  .types {
+    margin-bottom: 20px;
+  }
+
+  .description-text {
+    font-size: 0.75em;
+    line-height: 2;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-width: 896px) {
+  .hide-on-landscape {
+    display: none;
+  }
+}

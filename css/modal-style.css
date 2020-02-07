@@ -1,0 +1,162 @@
+@charset "utf-8";
+
+/* CSS Document */
+:root {
+  --light-gray: #f3f3f5;
+  --gray: #636A72;
+  --gray-gradient: linear-gradient(180deg, rgba(108, 117, 125, 1) 0%, rgba(83, 91, 102, 1) 100%);
+  --light: #fff;
+}
+
+.modal-body{
+  padding: 0;
+}
+
+.modal-nav-content {
+  position: relative;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+}
+
+.menu-container {
+  max-width: 962px;
+}
+
+.region-menu {
+  padding: 0;
+  margin: auto;
+}
+
+.menus {
+  text-align: center;
+}
+
+.menus:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+.overlay-menu {
+  padding: 0;
+  margin: 0;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.modal-content {
+  border-radius: 34px;
+}
+
+.modal-header {
+  background: var(--gray);
+  background: var(--gray-gradient);
+  margin-bottom: 20px;
+  border-radius: 30px 30px 0 0;
+}
+
+.modal-backdrop {
+  opacity: 0.9 !important;
+}
+
+.modal-title {
+  color: var(--light);
+  font-family: A1ゴシック B;
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: .25rem;
+}
+
+.help-image {
+  max-height: 300px;
+  margin-bottom: 30px;
+}
+
+.section {
+  font-family: A1ゴシック B;
+  font-size: 0.875em;
+  font-weight: 800;
+  margin-bottom: 40px;
+  padding: 30px 46px;
+}
+
+.section-odd {
+  background: var(--light-gray);
+}
+
+.help-p {
+  font-family: A1ゴシック R;
+  font-size: 0.8125em;
+}
+/*
+.help-content {
+  margin: 0 30px;
+} */
+
+.transparent-close {
+  color: #fff;
+  opacity: 1;
+  float: left;
+  margin: -1rem -1rem -1rem auto;
+  background-color: transparent;
+  border: none;
+  text-shadow: 0 1px 2px #fff;
+  font-size: 1.5em;
+}
+
+.modal-region-header {
+  border: none;
+  padding: 0 1em 1em 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-top-left-radius: .3rem;
+  border-top-right-radius: .3rem;
+}
+
+/* media queries */
+@media (min-width: 992px) {
+  .modal-dialog {
+    max-width: 962px !important;
+  }
+
+  .section {
+    font-size: 1em;
+  }
+
+  .close {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 320px) {
+  .modal-dialog {
+    max-width: 314px !important;
+  }
+
+  .modal-body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .section {
+    max-width: 314px;
+  }
+
+  .help-image, .help-p {
+    max-width: 280px;
+  }
+
+  #help-modal-title {
+    font-size: 25px;
+    letter-spacing: 3px;
+  }
+}

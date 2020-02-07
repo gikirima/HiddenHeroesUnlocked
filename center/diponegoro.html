@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>ディポネゴロ - Heroes of Indonesia</title>
+
+  <!--Morisawa Font-->
+  <script type="text/javascript" src="//typesquare.com/3/tsst/script/ja/typesquare.js?IU~Zr-XD6eA%3D" charset="utf-8"></script>
+  <!-- Bootstrap -->
+  <link href="../css/bootstrap-4.3.1.css" rel="stylesheet">
+  <!-- Adobe Font-->
+  <link rel="stylesheet" href="https://use.typekit.net/vwy2wht.css">
+
+
+  <!--style css-->
+  <!--<link href="../css/style2.css" rel="stylesheet" type="text/css">-->
+
+  <!-- animation css -->
+  <link rel="stylesheet" href="../css/animate.css">
+  <!-- loader css -->
+  <link rel="stylesheet" href="../css/loader.css">
+  <!-- page style css -->
+  <link rel="stylesheet" href="../css/modal-style.css" type="text/css">
+
+</head>
+
+<body class="bg-1" style="background-color: gray;">
+
+  <!-- loader STARTS -->
+  <div id="loader" class="loader">
+    <div class="sk-grid sk-center">
+      <div class="sk-grid-cube"></div>
+      <div class="sk-grid-cube"></div>
+      <div class="sk-grid-cube"></div>
+      <div class="sk-grid-cube"></div>
+      <div class="sk-grid-cube"></div>
+      <div class="sk-grid-cube"></div>
+      <div class="sk-grid-cube"></div>
+      <div class="sk-grid-cube"></div>
+      <div class="sk-grid-cube"></div>
+    </div>
+  </div>
+  <!-- loader ENDS -->
+
+  <!-- overlay STARTS-->
+  <div class="modal fade" id="region-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-nav-content">
+
+        <div class="modal-region-header">
+          <button type="button" class="transparent-close" data-dismiss="modal">
+            <span aria-hidden="true">&times;</span></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="container-fluid menu-container">
+            <div class="row region-menu">
+              <div class="col-xs-12 col-md-12 col-lg-4 menus mb-3 mb-lg-0">
+                <a href="../west.html"><img class="img-fluid overlay-menu" src="../images/Thumbnail/Menu/west.png" alt="west"></a>
+              </div>
+              <div class="col-xs-12 col-md-12 col-lg-4 menus mb-3 mb-lg-0">
+                <a href="../center.html"><img class="img-fluid overlay-menu" src="../images/Thumbnail/Menu/center.png" alt="center"></a>
+              </div>
+
+              <div class="col-xs-12 col-md-12 col-lg-4 menus">
+                <a href="../east.html"><img class="img-fluid overlay-menu" src="../images/Thumbnail/Menu/east.png" alt="east"></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- overlay ENDS-->
+
+  <!-- Hero Modal -->
+  <div class="modal fade" id="hero-img-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-nav-content">
+
+        <div class="modal-region-header">
+          <button type="button" class="transparent-close" data-dismiss="modal">
+            <span class="close-btn-font" aria-hidden="true">&times;</span></button>
+        </div>
+        <div class="modal-body text-center">
+
+          <img style="max-height: 100%;" class="img-fluid" src="../images/Character/Tengah/diponegoro-phone.png" alt="diponegoro">
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- Hero Modal ENDS -->
+
+
+
+  <!-- body starts here -->
+  <main class="hide-on-landscape d-none">
+
+    <!--Place Name Header-->
+<div id="header"><span class="city w-100">ジョグジャカルタ</span><div class="separator"></div></div>
+    <!--Place Name Header ENDS-->
+
+<div class="centercontents">
+  <div class="nameset">
+    <div class="names"><span class="concept">不屈の統一者</span><span class="heroname">ディポネゴロ</span></div>
+    <div class="buttons">
+      <div class="zoom"></div>
+      <div class="profile">プロフィール</div>
+    </div>
+  </div>
+</div>
+
+
+    <!--Bottom Footer-->
+    <div id="footer" class="container animated fadeInUp delay-1 fast">
+      <div class="row text-center h-100 justify-content-around">
+
+        <!-- REGION BUTTON -->
+        <div class="col-6 gridpad">
+          <div data-toggle="modal" data-target="#region-modal" id="region-button" class="button-font d-flex flex-column text-center">
+            <img id="region-icon" class="icons animated fadeInUp delay-3 fast" src="../images/SVG/region-icon-white.svg" alt="region-icon">
+            <span class="animated fadeInUp delay-4 fast">REGION</span>
+          </div>
+        </div>
+
+
+        <!-- LOCAL INFO BUTTON -->
+        <div class="col-6 gridpad">
+          <div id="local-button" class="tablink text-center d-flex flex-column button-font">
+            <img id="info-icon" class="icons animated fadeInUp delay-3 fast" src="../images/SVG/info-icon3.svg" alt="local-info-icon3">
+            <span id="local-text" class="animated fadeInUp delay-4 fast">LOCAL INFO</span>
+          </div>
+        </div>
+      </div>
+      <!--Bottom Footer Ends-->
+    </div>
+  </main>
+
+
+  <!--jquery js-->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <!--bootstrap theme-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <script src="../js/script.js"></script>
+  <!-- js cookies -->
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+  <!-- set cookies -->
+  <script type="text/javascript">
+    Cookies.set("diponegoro", "true", {
+      expires: 10
+    });
+  </script>
+
+</body>
+
+</html>
